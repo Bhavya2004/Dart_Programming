@@ -10,9 +10,10 @@ void main(List<String> args) {
   print("Enter array elements");
   for (int i = 0; i < n; i++) {
     int e = int.parse(stdin.readLineSync()!);
+    arr.add(e);
   }
 
-  for (int j = 0; j < n; j++) {
+  for (int j = 0; j < arr.length; j++) {
     if (arr[j] % 2 == 1) {
       odd_count++;
     } else {
