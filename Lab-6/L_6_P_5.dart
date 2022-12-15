@@ -17,9 +17,9 @@ main() {
       "${today.day.toString().padLeft(2, '0')}-${today.month.toString().padLeft(3, '0')}-${today.year.toString()}";
   print(datePattern3); //dd-MMM-yyyy
 
-  // String datePattern4 =
-  //     "${today.day.toString().padLeft(2, '0')}-${today.month.toString().padLeft(2, '0')}-${today.year.toString().padRight(2)}";
-  // print(datePattern4); //dd-MM-yy
+  String datePattern4 =
+      "${today.day.toString().padLeft(2, '0')}-${today.month.toString().padLeft(2, '0')}-${today.year.toString().substring(2)}";
+  print(datePattern4); //dd-MM-yy
   String datePattern5 =
       "${today.day.toString().padLeft(2, '0')} ${today.month.toString().padLeft(3, '0')} ${today.year.toString()}";
   print(datePattern5); //dd MMM yyyy
